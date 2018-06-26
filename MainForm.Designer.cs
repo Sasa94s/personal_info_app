@@ -40,7 +40,8 @@
             this.richTextBoxBio = new System.Windows.Forms.RichTextBox();
             this.dateTimePickerDOB = new System.Windows.Forms.DateTimePicker();
             this.pictureBoxPersonal = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonBrowse = new System.Windows.Forms.Button();
+            this.buttonSave = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPersonal)).BeginInit();
             this.SuspendLayout();
             // 
@@ -137,21 +138,32 @@
             this.pictureBoxPersonal.TabIndex = 12;
             this.pictureBoxPersonal.TabStop = false;
             // 
-            // button1
+            // buttonBrowse
             // 
-            this.button1.Location = new System.Drawing.Point(372, 267);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(250, 23);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Browse";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonBrowse.Location = new System.Drawing.Point(372, 267);
+            this.buttonBrowse.Name = "buttonBrowse";
+            this.buttonBrowse.Size = new System.Drawing.Size(250, 23);
+            this.buttonBrowse.TabIndex = 13;
+            this.buttonBrowse.Text = "Browse";
+            this.buttonBrowse.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // buttonSave
+            // 
+            this.buttonSave.Location = new System.Drawing.Point(76, 266);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size(270, 23);
+            this.buttonSave.TabIndex = 14;
+            this.buttonSave.Text = "Save File";
+            this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonSave);
+            this.Controls.Add(this.buttonBrowse);
             this.Controls.Add(this.pictureBoxPersonal);
             this.Controls.Add(this.dateTimePickerDOB);
             this.Controls.Add(this.richTextBoxBio);
@@ -163,7 +175,7 @@
             this.Controls.Add(this.labelLinkedIn);
             this.Controls.Add(this.labelDOB);
             this.Controls.Add(this.labelName);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Personal Information";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPersonal)).EndInit();
@@ -185,7 +197,8 @@
         private System.Windows.Forms.RichTextBox richTextBoxBio;
         private System.Windows.Forms.DateTimePicker dateTimePickerDOB;
         private System.Windows.Forms.PictureBox pictureBoxPersonal;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonBrowse;
+        private System.Windows.Forms.Button buttonSave;
     }
 }
 
