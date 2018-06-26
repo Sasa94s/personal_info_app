@@ -48,14 +48,16 @@ namespace WindowsFormsApp1
             public string linkedin;
             public string github;
             public string bio;
+            public Image img;
 
-            public PersonalInfo (string name, DateTime dob, string linkedin, string github, string bio)
+            public PersonalInfo (string name, DateTime dob, string linkedin, string github, string bio, Image img)
             {
                 this.name = name;
                 this.dob = dob;
                 this.linkedin = linkedin;
                 this.github = github;
                 this.bio = bio;
+                this.img = img;
             }
             
         }
@@ -67,7 +69,8 @@ namespace WindowsFormsApp1
                                                 dateTimePickerDOB.Value,
                                                 textBoxLinkedIn.Text,
                                                 textBoxGitHub.Text,
-                                                richTextBoxBio.Text);
+                                                richTextBoxBio.Text,
+                                                pictureBoxPersonal.Image);
             return data;
         }
 
@@ -78,5 +81,17 @@ namespace WindowsFormsApp1
             return json;
         }
 
+        private void buttonBrowse_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                Image img = new Bitmap(open.FileName);
+                string imagename = open.SafeFileName;
+                pictureBoxPersonal.Image = img.GetThumbnailImage(250, 250, null, new IntPtr());
+                open.RestoreDirectory = true;
+            }
+        }
     }
 }
