@@ -42,6 +42,7 @@
             this.pictureBoxPersonal = new System.Windows.Forms.PictureBox();
             this.buttonBrowse = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
+            this.buttonLoad = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPersonal)).BeginInit();
             this.SuspendLayout();
             // 
@@ -150,19 +151,30 @@
             // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(76, 266);
+            this.buttonSave.Location = new System.Drawing.Point(209, 266);
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(270, 23);
+            this.buttonSave.Size = new System.Drawing.Size(137, 23);
             this.buttonSave.TabIndex = 14;
-            this.buttonSave.Text = "Save File";
+            this.buttonSave.Text = "Save Info";
             this.buttonSave.UseVisualStyleBackColor = true;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
+            // 
+            // buttonLoad
+            // 
+            this.buttonLoad.Location = new System.Drawing.Point(76, 266);
+            this.buttonLoad.Name = "buttonLoad";
+            this.buttonLoad.Size = new System.Drawing.Size(127, 23);
+            this.buttonLoad.TabIndex = 15;
+            this.buttonLoad.Text = "Load Info";
+            this.buttonLoad.UseVisualStyleBackColor = true;
+            this.buttonLoad.Click += new System.EventHandler(this.buttonLoad_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonLoad);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonBrowse);
             this.Controls.Add(this.pictureBoxPersonal);
@@ -200,6 +212,7 @@
         private System.Windows.Forms.PictureBox pictureBoxPersonal;
         private System.Windows.Forms.Button buttonBrowse;
         private System.Windows.Forms.Button buttonSave;
+        private System.Windows.Forms.Button buttonLoad;
     }
 }
 
