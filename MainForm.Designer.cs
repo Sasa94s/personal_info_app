@@ -96,28 +96,28 @@
             this.textBoxGitHub.Location = new System.Drawing.Point(76, 107);
             this.textBoxGitHub.Name = "textBoxGitHub";
             this.textBoxGitHub.Size = new System.Drawing.Size(270, 20);
-            this.textBoxGitHub.TabIndex = 6;
+            this.textBoxGitHub.TabIndex = 4;
             // 
             // textBoxLinkedIn
             // 
             this.textBoxLinkedIn.Location = new System.Drawing.Point(76, 71);
             this.textBoxLinkedIn.Name = "textBoxLinkedIn";
             this.textBoxLinkedIn.Size = new System.Drawing.Size(270, 20);
-            this.textBoxLinkedIn.TabIndex = 7;
+            this.textBoxLinkedIn.TabIndex = 3;
             // 
             // textBoxName
             // 
             this.textBoxName.Location = new System.Drawing.Point(76, 10);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(270, 20);
-            this.textBoxName.TabIndex = 9;
+            this.textBoxName.TabIndex = 1;
             // 
             // richTextBoxBio
             // 
             this.richTextBoxBio.Location = new System.Drawing.Point(76, 141);
             this.richTextBoxBio.Name = "richTextBoxBio";
             this.richTextBoxBio.Size = new System.Drawing.Size(269, 119);
-            this.richTextBoxBio.TabIndex = 10;
+            this.richTextBoxBio.TabIndex = 5;
             this.richTextBoxBio.Text = "";
             // 
             // dateTimePickerDOB
@@ -125,7 +125,7 @@
             this.dateTimePickerDOB.Location = new System.Drawing.Point(76, 37);
             this.dateTimePickerDOB.Name = "dateTimePickerDOB";
             this.dateTimePickerDOB.Size = new System.Drawing.Size(270, 20);
-            this.dateTimePickerDOB.TabIndex = 11;
+            this.dateTimePickerDOB.TabIndex = 2;
             // 
             // pictureBoxPersonal
             // 
@@ -144,7 +144,7 @@
             this.buttonBrowse.Location = new System.Drawing.Point(372, 267);
             this.buttonBrowse.Name = "buttonBrowse";
             this.buttonBrowse.Size = new System.Drawing.Size(250, 23);
-            this.buttonBrowse.TabIndex = 13;
+            this.buttonBrowse.TabIndex = 6;
             this.buttonBrowse.Text = "Browse";
             this.buttonBrowse.UseVisualStyleBackColor = true;
             this.buttonBrowse.Click += new System.EventHandler(this.buttonBrowse_Click);
@@ -154,7 +154,7 @@
             this.buttonSave.Location = new System.Drawing.Point(209, 266);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(137, 23);
-            this.buttonSave.TabIndex = 14;
+            this.buttonSave.TabIndex = 8;
             this.buttonSave.Text = "Save Info";
             this.buttonSave.UseVisualStyleBackColor = true;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
@@ -164,7 +164,7 @@
             this.buttonLoad.Location = new System.Drawing.Point(76, 266);
             this.buttonLoad.Name = "buttonLoad";
             this.buttonLoad.Size = new System.Drawing.Size(127, 23);
-            this.buttonLoad.TabIndex = 15;
+            this.buttonLoad.TabIndex = 7;
             this.buttonLoad.Text = "Load Info";
             this.buttonLoad.UseVisualStyleBackColor = true;
             this.buttonLoad.Click += new System.EventHandler(this.buttonLoad_Click);
@@ -173,7 +173,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(637, 304);
             this.Controls.Add(this.buttonLoad);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonBrowse);
